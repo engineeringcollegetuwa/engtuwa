@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Engineering College Tuwa</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f06588da8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .faculties{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        
+        }
+        img{
+            width: 100%;
+        }
+        .blog-post{
+            width: 100%;
+            max-width: 98rem;
+            padding: 5rem;
+            background-color: #fff;
+            box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+            display: flex;
+            align-items: center;
+            border-radius: .8rem;
+            margin-bottom: 5rem;
+        }
+        .blog-post_img{
+            min-width: 35rem;
+            max-width: 35rem;
+            height: 30rem;
+            transform: translateX(-8rem);
+            position: relative;
+        }
+
+        .blog-post_img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: .8rem;
+        }
+
+        .blog-post_img::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to right, rgba(79,172,254,.8),
+                                                   rgba(0,242,254,.8));
+            box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
+        }
+
+        .blog-post_title{
+            font-size: 2.5rem;
+            margin: 1.5rem 0 1.5rem 2rem;
+            text-transform: uppercase;
+            color: #4facfe;
+
+        }
+        .blog-post_text{
+            margin-bottom: 3rem;
+            margin-left: 1.5rem;
+            font-size: 1.4rem;
+            color: rgba(0,0,0,.7);
+        }
+
+        @media screen and (max-width: 1068px){
+            .blog-post{
+                max-width: 80rem;
+            }
+            .blog-post_img{
+                min-width: 30rem;
+                max-width: 30rem;
+            }
+        }
+        @media screen and (max-width: 868px){
+            .blog-post{
+               max-width: 70rem;
+            }
+            .blog-post_img{
+                width: 100px;
+                height: 100px;
+            }
+        
+        }
+        @media screen and (max-width: 768px){
+            .blog-post{
+               padding: 2.5rem;
+               flex-direction: column;
+            }
+            .blog-post_img{
+                min-width: 100%;
+                max-width: 100%;
+                transform: translate(0, -8rem);
+            }
+        }
+    </style>
+
+    
+</head>
+<body oncontextmenu="return false">
+
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="nav-brand">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="ECT logo">
+                        </a>
+                    </div>
+
+                    <div class="menu-icons open">
+                        <i class="icon ion-md-menu"></i>
+                    </div> 
+                    <ul class="nav-list" >
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link current">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faculties.html" class="nav-link">Faculties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://play.google.com/store/apps/details?id=com.burhanuddin.ect&hl=en" class="nav-link">Download Android App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="main-message"  
+                    data-aos="zoom-in"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="bottom-bottom">
+                    <h3>A Place Where You Can Achieve</h3>
+                    <h1>Engineering <br> College <br> Tuwa</h1>
+                    <div class="cta">
+                        <a href="registration.html" class="btn">Register For Job Fair</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!--<section class="faculties">
+            <div class="blog-post">
+                <div class="blog-post_image">
+                    <img src="images/Faculty/AMIT PATEL.JPG" alt="">
+                </div>
+                <div class="blog-post_info">
+                    <h1 class="blog-post_title">
+                        Mr. Amit h. patel
+                    </h1>
+                    <p class="blog-post_text">
+                        Librarian
+                    </p>
+        
+                </div>
+            </div>
+            </section>-->
+            <section class="gallary">
+                <div class="container">
+                    <div class="title-heading">
+                        <!-- <h3>Amazing</h3> -->
+                        <h1>World Class Library</h1>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+                    </div>
+                    <div class="portfolio">
+                        <!-- data-aos="zoom-in-up"
+                        data-aos-offset="0"
+                        data-aos-delay="0"
+                        data-aos-duration="500"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="center-center" -->
+                        <div class="portfolio__item">
+                         <a href="images/campus/l1.jpeg" data-lightbox="life at campus"> 
+                            <img src="images/campus/l1.jpeg" alt="" class="portfolio__image" ></a>
+                        </div>
+                        <div class="portfolio__item" id="portfolio"> 
+                            <a href="images/campus/l2.jpeg" data-lightbox="life at campus">
+                          <img src="images/campus/l2.jpeg" alt="" class="portfolio__image"></a>
+                        </div>
+                        <div class="portfolio__item">
+                            <a href="images/campus/l3.jpeg" data-lightbox="life at campus">
+                          <img src="images/campus/l3.jpeg" alt="" class="portfolio__image"></a>
+                      </div>
+                      <div class="portfolio__item">
+                        <a href="images/campus/l4.jpeg" data-lightbox="life at campus">
+                        <img src="images/campus/l4.jpeg" alt="" class="portfolio__image"></a>
+                    </div>
+                    <div class="portfolio__item">
+                        <a href="images/campus/l5.jpeg" data-lightbox="life at campus">
+                        <img src="images/campus/l5.jpeg" alt="" class="portfolio__image"></a>
+                      </div>
+                      <div class="portfolio__item">
+                        <a href="images/campus/l6.jpeg" data-lightbox="life at campus">
+                        <img src="images/campus/l6.jpeg" alt="" class="portfolio__image"></a>
+                      </div>
+              
+                <div class="portfolio__item">
+                    <a href="images/campus/l7.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/l7.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+          
+            <div class="portfolio__item">
+                <a href="images/campus/l8.jpeg" data-lightbox="life at campus">
+                <img src="images/campus/l8.jpeg" alt="" class="portfolio__image"></a>
+              </div>
+                </div>
+                <br><br><br> <br>
+                <div class="title-heading">
+                    <!-- <h3>Amazing</h3> -->
+                    <h1>High Class Hostel</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+                </div>
+                <div class="portfolio">
+                    <!-- data-aos="zoom-in-up"
+                    data-aos-offset="0"
+                    data-aos-delay="0"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="center-center" -->
+                    <div class="portfolio__item">
+                     <a href="images/campus/h1.jpg" data-lightbox="life at campus"> 
+                        <img src="images/campus/h1.jpg" alt="" class="portfolio__image" ></a>
+                    </div>
+                    <div class="portfolio__item" id="portfolio"> 
+                        <a href="images/campus/h2.jpg" data-lightbox="life at campus">
+                      <img src="images/campus/h2.jpg" alt="" class="portfolio__image"></a>
+                    </div>
+                    <div class="portfolio__item">
+                        <a href="images/campus/h3.jpeg" data-lightbox="life at campus">
+                      <img src="images/campus/h3.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+                  <div class="portfolio__item">
+                    <a href="images/campus/h4.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/h4.jpeg" alt="" class="portfolio__image"></a>
+                </div>
+                <div class="portfolio__item">
+                    <a href="images/campus/h5.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/h5.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+                  <div class="portfolio__item">
+                    <a href="images/campus/h6.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/h6.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+          
+            <div class="portfolio__item">
+                <a href="images/campus/h7.jpeg" data-lightbox="life at campus">
+                <img src="images/campus/h7.jpeg" alt="" class="portfolio__image"></a>
+              </div>
+      
+        <div class="portfolio__item">
+            <a href="images/campus/h8.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/h8.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/h9.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/h9.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+
+
+            </div>
+                
+            <br><br><br> <br>
+            <div class="title-heading">
+                <!-- <h3>Amazing</h3> -->
+                <h1>Bus Transportation Service Spanning In A Huge Network Bringing Hundreds Of Students And Faculties Everyday</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+            </div>
+            <div class="portfolio">
+                <!-- data-aos="zoom-in-up"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="center-center" -->
+                <div class="portfolio__item">
+                 <a href="images/campus/b1.jpg" data-lightbox="life at campus"> 
+                    <img src="images/campus/b1.jpg" alt="" class="portfolio__image" ></a>
+                </div>
+                <div class="portfolio__item" id="portfolio"> 
+                    <a href="images/campus/b2.jpeg" data-lightbox="life at campus">
+                  <img src="images/campus/b2.jpeg" alt="" class="portfolio__image"></a>
+                </div>
+                
+
+        </div>
+            
+        <br><br><br> <br>
+        <div class="title-heading">
+            <!-- <h3>Amazing</h3> -->
+            <h1>Huge Parking Facility</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+        </div>
+        <div class="portfolio">
+            <!-- data-aos="zoom-in-up"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="center-center" -->
+            <div class="portfolio__item">
+             <a href="images/campus/p1.jpeg" data-lightbox="life at campus"> 
+                <img src="images/campus/p1.jpeg" alt="" class="portfolio__image" ></a>
+            </div>
+            <div class="portfolio__item" id="portfolio"> 
+                <a href="images/campus/p2.jpeg" data-lightbox="life at campus">
+              <img src="images/campus/p2.jpeg" alt="" class="portfolio__image"></a>
+            </div>
+            <div class="portfolio__item">
+                <a href="images/campus/p3.jpeg" data-lightbox="life at campus">
+              <img src="images/campus/p3.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/p4.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/p4.jpeg" alt="" class="portfolio__image"></a>
+        </div>
+        <div class="portfolio__item">
+            <a href="images/campus/p5.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/p5.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          
+    </div>
+    <br><br><br> <br>
+    <div class="title-heading">
+        <!-- <h3>Amazing</h3> -->
+        <h1>Magnificent Workshop</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+    </div>
+    <div class="portfolio">
+        <!-- data-aos="zoom-in-up"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="center-center" -->
+        <div class="portfolio__item">
+         <a href="images/campus/w1.jpeg" data-lightbox="life at campus"> 
+            <img src="images/campus/w1.jpeg" alt="" class="portfolio__image" ></a>
+        </div>
+        <div class="portfolio__item" id="portfolio"> 
+            <a href="images/campus/w2.jpeg" data-lightbox="life at campus">
+          <img src="images/campus/w2.jpeg" alt="" class="portfolio__image"></a>
+        </div>
+        <div class="portfolio__item">
+            <a href="images/campus/w3.jpeg" data-lightbox="life at campus">
+          <img src="images/campus/w3.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/w4.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/w4.jpeg" alt="" class="portfolio__image"></a>
+    </div>
+   
+
+</div>
+
+<br><br><br> <br>
+                <div class="title-heading">
+                    <!-- <h3>Amazing</h3> -->
+                    <h1>High Tech Labs</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+                </div>
+                <div class="portfolio">
+                    <!-- data-aos="zoom-in-up"
+                    data-aos-offset="0"
+                    data-aos-delay="0"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="center-center" -->
+                    <div class="portfolio__item">
+                     <a href="images/campus/t1.jpeg" data-lightbox="life at campus"> 
+                        <img src="images/campus/t1.jpeg" alt="" class="portfolio__image" ></a>
+                    </div>
+                    <div class="portfolio__item" id="portfolio"> 
+                        <a href="images/campus/t2.jpg" data-lightbox="life at campus">
+                      <img src="images/campus/t2.jpg" alt="" class="portfolio__image"></a>
+                    </div>
+                    <div class="portfolio__item">
+                        <a href="images/campus/t3.jpeg" data-lightbox="life at campus">
+                      <img src="images/campus/t3.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+                  <div class="portfolio__item">
+                    <a href="images/campus/t4.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/t4.jpeg" alt="" class="portfolio__image"></a>
+                </div>
+                <div class="portfolio__item">
+                    <a href="images/campus/t5.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/t5.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+                  <div class="portfolio__item">
+                    <a href="images/campus/t6.jpeg" data-lightbox="life at campus">
+                    <img src="images/campus/t6.jpeg" alt="" class="portfolio__image"></a>
+                  </div>
+          
+            <div class="portfolio__item">
+                <a href="images/campus/t7.jpeg" data-lightbox="life at campus">
+                <img src="images/campus/t7.jpeg" alt="" class="portfolio__image"></a>
+              </div>
+      
+        <div class="portfolio__item">
+            <a href="images/campus/t8.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t8.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t9.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t9.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t10.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t10.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t11.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t11.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t12.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t12.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t13.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t13.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          
+          <div class="portfolio__item">
+            <a href="images/campus/t14.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t14.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t15.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t15.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          
+          <div class="portfolio__item">
+            <a href="images/campus/t16.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t16.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          <div class="portfolio__item">
+            <a href="images/campus/t17.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t17.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          
+          
+          
+          <div class="portfolio__item">
+            <a href="images/campus/t19.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t19.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+          
+          <div class="portfolio__item">
+            <a href="images/campus/t21.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/t21.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+         
+            </div>
+
+            <br><br><br> <br>
+            <div class="title-heading">
+                <!-- <h3>Amazing</h3> -->
+                <h1>Big Class Rooms And Other Utility Room</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+            </div>
+            <div class="portfolio">
+                <!-- data-aos="zoom-in-up"
+                data-aos-offset="0"
+                data-aos-delay="0"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="center-center" -->
+                <div class="portfolio__item">
+                 <a href="images/campus/c1.jpeg" data-lightbox="life at campus"> 
+                    <img src="images/campus/c1.jpeg" alt="" class="portfolio__image" ></a>
+                </div>
+                <div class="portfolio__item" id="portfolio"> 
+                    <a href="images/campus/c2.jpeg" data-lightbox="life at campus">
+                  <img src="images/campus/c2.jpeg" alt="" class="portfolio__image"></a>
+                </div>
+            <div class="portfolio__item">
+                <a href="images/campus/c5.jpg" data-lightbox="life at campus">
+                <img src="images/campus/c5.jpg" alt="" class="portfolio__image"></a>
+              </div>
+      
+        <div class="portfolio__item">
+            <a href="images/campus/c7.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/c7.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+  
+    <div class="portfolio__item">
+        <a href="images/campus/c8.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c8.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/c9.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c9.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/c10.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c10.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/c11.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c11.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/c12.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c12.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/c13.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c13.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      
+      <div class="portfolio__item">
+        <a href="images/campus/c14.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c14.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/c15.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/c15.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      
+      <div class="portfolio__item">
+        <a href="images/campus/t16.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/t16.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      <div class="portfolio__item">
+        <a href="images/campus/t17.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/t17.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      
+      
+      
+      <div class="portfolio__item">
+        <a href="images/campus/t19.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/t19.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+      
+      <div class="portfolio__item">
+        <a href="images/campus/t21.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/t21.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+     
+        </div>
+
+        <br><br><br> <br>
+        <div class="title-heading">
+            <!-- <h3>Amazing</h3> -->
+            <h1>Indoor Outdoor Games</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis eaque architecto numquam, aliquid est sequi sunt explicabo dolorum. Ipsum corporis nobis commodi nulla. Inventore hic facilis numquam quod excepturi.</p> -->
+        </div>
+        <div class="portfolio">
+            <!-- data-aos="zoom-in-up"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="center-center" -->
+            <div class="portfolio__item">
+             <a href="images/campus/g1.jpeg" data-lightbox="life at campus"> 
+                <img src="images/campus/g1.jpeg" alt="" class="portfolio__image" ></a>
+            </div>
+            <div class="portfolio__item" id="portfolio"> 
+                <a href="images/campus/g2.jpeg" data-lightbox="life at campus">
+              <img src="images/campus/g2.jpeg" alt="" class="portfolio__image"></a>
+            </div>
+        <div class="portfolio__item">
+            <a href="images/campus/g3.jpeg" data-lightbox="life at campus">
+            <img src="images/campus/g3.jpeg" alt="" class="portfolio__image"></a>
+          </div>
+  
+    <div class="portfolio__item">
+        <a href="images/campus/g4.jpeg" data-lightbox="life at campus">
+        <img src="images/campus/g4.jpeg" alt="" class="portfolio__image"></a>
+      </div>
+
+<div class="portfolio__item">
+    <a href="images/campus/g5.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g5.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  <div class="portfolio__item">
+    <a href="images/campus/g6.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g6.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  <div class="portfolio__item">
+    <a href="images/campus/g7.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g7.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  <div class="portfolio__item">
+    <a href="images/campus/g8.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g8.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  <div class="portfolio__item">
+    <a href="images/campus/g9.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g9.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  <div class="portfolio__item">
+    <a href="images/campus/g10.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g10.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  
+  <div class="portfolio__item">
+    <a href="images/campus/g11.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g11.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  <div class="portfolio__item">
+    <a href="images/campus/g12.jpeg" data-lightbox="life at campus">
+    <img src="images/campus/g12.jpeg" alt="" class="portfolio__image"></a>
+  </div>
+  
+
+    </div>
+
+    </div>
+            </section>
+            
+  
+        </main>
+
+        <footer>
+            <div class="footer-grid">
+                <!--grid item #1-->
+                <div class="footer-grid-item">
+                    <h1>Engineering College Tuwa</h1>
+                    <h3>A Place Where You Can Achieve</h3> 
+                    <div class="cta">
+                        <a href="registration.html" class="btn">Register For Job Fair</a>
+                    </div>
+                </div>
+                
+                 <!--grid item #2-->
+               
+                 <div class="footer-grid-item">
+                    <h1>Reach us</h1>
+                    <h3>Address</h3>
+                   <a href="https://www.google.com/maps/dir/22.8039635,73.4769454/ect+tuwa/@22.8082252,73.4706741,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x39609e1438fcae8b:0x88fcf6f835af3322!2m2!1d73.480081!2d22.813829" style="color:#fff;"><p>Engineering College Tuwa<br> 
+                    At. & Post. Tuwa, Taluka Godhra, Dist. Panchmahal, Godhra, Gujarat 388713</p></a>
+                    <h3>Email</h3><p>info@engtuwa.in</p>
+                    <h3>Contact</h3><p>2672-286756/58</p>
+                   
+                </div>
+                 <!--grid item #3-->
+                 <div class="footer-grid-item">
+                    <h1>Social Media</h1>
+                    <!--<i class="fab fa-youtube">&nbsp;<a href="https://www.youtube.com/channel/UCj_qBKSZbyTMO0nxBud-ENA">Youtube</a></i>-->
+                    <i class="fab fa-facebook">&nbsp;<a href="https://www.facebook.com/engtuwa/">Facebook</a></i>
+                   <!--<i class="fab fa-instagram">&nbsp;<a href="https://www.facebook.com/370349003313010/posts/1113933832287853/?d=n">Instagram</a></i>--> 
+                    
+                </div>
+            </div>
+           
+          
+           <p>&copy;  <a href="http://dot53.in" class="visit">2020 Dot53 WebSolutions</a></p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            setTimeout(function(){
+                $('.loader-bg').fadeToggle();
+            }, 1500);
+        </script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        window.history.replaceState('','','/');
+    </script>
+</body>
+</html>
